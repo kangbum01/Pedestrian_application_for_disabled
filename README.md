@@ -178,15 +178,16 @@ Kakao API Key
 DB 비밀번호
 
 .gitignore에 아래를 추가하세요.
-
+```
 *.json
 .env
 client.txt
 response.mp3
 __pycache__/
 venv/
-
+```
 🧪 트러블슈팅 (자주 발생)
+```
 Kakao API 401: KAKAO_API_KEY 누락/오타/권한 확인
 
 DB 연결 실패: host/user/password/database 값 및 포트(3306) 확인
@@ -194,17 +195,18 @@ DB 연결 실패: host/user/password/database 값 및 포트(3306) 확인
 PyAudio 설치 오류(Windows): 빌드 도구/호환 wheel 필요 → 파일 업로드 방식(/process_audio)을 우선 사용 권장
 
 Google STT/TTS 오류: 인증키 경로/권한/프로젝트 설정 확인
-
+```
 🔧 개선 사항
+```
 장애 분류 세분화: 사용자 UI에서 불편 부위를 선택 → 장애 유형에 맞춘 맞춤 경로 설계 
 
 실시간 장애물 감지: 센서 기반 장애물 실시간 탐지/분석 → 위험 상황 대응 
 
 사용자 맞춤형 네비게이션: 현재 위치 + 장애물 데이터 기반 안전·효율 경로 제공 
-
+```
 👥 팀원
-유동균 (20204077) 
-컴퓨터공학 발표자료
+유동균 (20204077) - Frontend 개발
+컴퓨터공학
 
-강범석 (20204068) 
-컴퓨터공학 발표자료
+강범석 (20204068) - Backend 개발 
+컴퓨터공학
