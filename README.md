@@ -1,7 +1,7 @@
 # ♿ 장애인 길안내 서비스 (Accessibility Navigation Service)
 
 학술제 프로젝트로, **장애인의 이동 편의성을 높이기 위해 장애 상태·출발지·도착지 정보를 기반으로 최적 경로를 안내**하는 서비스입니다.  
-앱은 Android로 구현하고, 서버는 Flask로 구성하여 **장애물 DB + 카카오 지도/내비 API**를 이용해 경로를 계산/표시합니다. :contentReference[oaicite:2]{index=2}
+앱은 Android로 구현하고, 서버는 Flask로 구성하여 **장애물 DB + 카카오 지도/내비 API**를 이용해 경로를 계산/표시합니다.
 
 ---
 
