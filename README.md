@@ -106,6 +106,7 @@ Response 예시
   "OptimizedRoute": { "...kakao directions response..." },
   "KakaoMapUrl": "https://map.kakao.com/link/to/도착지명,경도,위도"
 }
+```
 2) 실시간 음성 인식 시작 (STT/TTS 서버)
 GET /start_live_speech
 
@@ -134,16 +135,18 @@ Navigation.py는 출발~도착 좌표 범위(사각형) 내 장애물을 조회�
 
 🚀 설치 및 실행 방법
 1) Backend 공통 준비
+```
 python -m venv venv
 # windows: venv\Scripts\activate
 # linux/mac: source venv/bin/activate
 pip install -U pip
 pip install flask requests numpy pymysql google-cloud-speech google-cloud-texttospeech
 실시간 음성 입력을 쓰는 경우:
-
 pip install pyaudio
+```
 2) 환경변수 설정 (권장)
 ✅ .env 예시(직접 생성)
+```
 KAKAO_API_KEY=YOUR_KAKAO_KEY
 DB_HOST=127.0.0.1
 DB_USER=root
@@ -154,10 +157,12 @@ GOOGLE_STT_CREDENTIALS=path/to/stt_key.json
 GOOGLE_TTS_CREDENTIALS=path/to/tts_key.json
 현재 코드처럼 키/비밀번호를 파일에 하드코딩하지 말고,
 실행 시 환경변수로 읽도록 수정하는 것을 권장합니다.
-
+```
 3) Navigation 서버 실행
+```
 python Navigation.py
 # 기본: http://127.0.0.1:5000
+```
 4) STT/TTS 서버 실행
 python Server.py
 현재 Server.py는 실행 시 live_speech_to_text()를 바로 호출합니다.
@@ -180,6 +185,7 @@ client.txt
 response.mp3
 __pycache__/
 venv/
+
 🧪 트러블슈팅 (자주 발생)
 Kakao API 401: KAKAO_API_KEY 누락/오타/권한 확인
 
@@ -191,21 +197,14 @@ Google STT/TTS 오류: 인증키 경로/권한/프로젝트 설정 확인
 
 🔧 개선 사항
 장애 분류 세분화: 사용자 UI에서 불편 부위를 선택 → 장애 유형에 맞춘 맞춤 경로 설계 
-소프트웨어공학 발표자료
-
 
 실시간 장애물 감지: 센서 기반 장애물 실시간 탐지/분석 → 위험 상황 대응 
-소프트웨어공학 발표자료
-
 
 사용자 맞춤형 네비게이션: 현재 위치 + 장애물 데이터 기반 안전·효율 경로 제공 
-소프트웨어공학 발표자료
-
 
 👥 팀원
 유동균 (20204077) 
-소프트웨어공학 발표자료
-
+컴퓨터공학 발표자료
 
 강범석 (20204068) 
-소프트웨어공학 발표자료
+컴퓨터공학 발표자료
