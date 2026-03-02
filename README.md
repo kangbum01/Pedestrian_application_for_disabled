@@ -31,26 +31,26 @@
 ### App (Android)
 - Android Studio로 개발
 - 사용자의 **장애 상태 / 출발지 / 도착지**를 서버로 전송
-- 서버가 계산한 **최적 경로를 안내** :contentReference[oaicite:4]{index=4}
+- 서버가 계산한 **최적 경로를 안내** 
 
 ### Server (Flask)
 - Flask 기반 서버
 - 전달받은 데이터에 맞게 **장애물 위치 데이터(DB)**를 활용해 경로 설정
-- 경로 설정 및 지도 출력은 **카카오 API** 사용 :contentReference[oaicite:5]{index=5}
+- 경로 설정 및 지도 출력은 **카카오 API** 사용
 
 ---
 
 ## ✅ 개발 결과
 - 사용자 위치 표시
 - 장애물 거리 표시
-- 경로 표시 :contentReference[oaicite:6]{index=6}
+- 경로 표시
 
 ---
 
 ## 🌱 기대효과 및 목표
 - 추천 경로 기반으로 안전하게 목적지 도달 가능
 - 실시간 장애물 등록을 통해 더 최적화된 길 제공
-- 서비스 적용 범위 확대 → 장애인 사고율 감소 기대 :contentReference[oaicite:7]{index=7}
+- 서비스 적용 범위 확대 → 장애인 사고율 감소 기대
 
 ---
 
